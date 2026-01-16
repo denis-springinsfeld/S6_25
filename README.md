@@ -66,12 +66,6 @@ export default defineConfig({
 });
 ```
 
-#### Enable GitHub Pages
-
-In your repository, go to Settings → Pages. Under Build and deployment, open the Source dropdown, and select GitHub Actions.
-
-GitHub will now deploy your site using a GitHub Actions workflow, which is necessary since Vite requires a build step for deployment.
-
 #### Create a Workflow
 
 Créer un nouveau fichier dans votre repository à
@@ -133,6 +127,8 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
+
+#### Enable GitHub Pages
 
 Dans `settings → pages → source`, sélectionnez **github actions**.
 
