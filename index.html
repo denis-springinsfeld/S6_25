@@ -4,90 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      :root {
-        --clr-txt: #191919;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-        font-size: 1.25rem;
-      }
-
-      body {
-        min-height: 100vh;
-        padding: 2rem;
-        color: var(--clr-txt);
-        background: linear-gradient(
-            #eceff4,
-            #eceff4 6px,
-            transparent 6px,
-            transparent
-          ),
-          fixed linear-gradient(transparent, #fff 70%),
-          fixed
-            repeating-linear-gradient(
-              #efefef,
-              #efefef 1px,
-              transparent 1px,
-              transparent 40px
-            ),
-          fixed
-            repeating-linear-gradient(
-              to right,
-              #efefef,
-              #efefef 1px,
-              transparent 1px,
-              transparent 40px
-            )
-            #fff;
-      }
-
-      a {
-        text-decoration: none;
-        color: currentColor;
-      }
-
-      h1 {
-        margin-bottom: 3rem;
-        text-align: center;
-      }
-
-      ul {
-        list-style: none;
-      }
-      nav {
-        max-width: 90vw;
-        margin: 0 auto;
-      }
-
-      .cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-
-        gap: 1rem;
-      }
-
-      .card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        aspect-ratio: 3/2;
-        padding: 1rem;
-        background-color: #fff;
-
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-        border-radius: 0.5rem;
-        text-align: center;
-      }
-
-      .card:hover {
-        transform: scale(1.05);
-        transition: transform 0.3s;
-      }
-    </style>
   </head>
   <body>
     <div>
@@ -135,5 +51,6 @@
         </nav>
       </div>
     </div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
