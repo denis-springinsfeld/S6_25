@@ -2,31 +2,138 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3d</title>
+    <title>Document</title>
+    <style>
+      :root {
+        --clr-txt: #191919;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        font-size: 1.25rem;
+      }
+
+      body {
+        min-height: 100vh;
+        padding: 2rem;
+        color: var(--clr-txt);
+        background: linear-gradient(
+            #eceff4,
+            #eceff4 6px,
+            transparent 6px,
+            transparent
+          ),
+          fixed linear-gradient(transparent, #fff 70%),
+          fixed
+            repeating-linear-gradient(
+              #efefef,
+              #efefef 1px,
+              transparent 1px,
+              transparent 40px
+            ),
+          fixed
+            repeating-linear-gradient(
+              to right,
+              #efefef,
+              #efefef 1px,
+              transparent 1px,
+              transparent 40px
+            )
+            #fff;
+      }
+
+      a {
+        text-decoration: none;
+        color: currentColor;
+      }
+
+      h1 {
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+
+      ul {
+        list-style: none;
+      }
+      nav {
+        max-width: 90vw;
+        margin: 0 auto;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+
+        gap: 1rem;
+      }
+
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 3/2;
+        padding: 1rem;
+        background-color: #fff;
+
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        text-align: center;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s;
+      }
+    </style>
   </head>
   <body>
-    <div id="app">
-      <a-scene>
-        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-        <a-cylinder
-          position="1 0.75 -3"
-          radius="0.5"
-          height="1.5"
-          color="#FFC65D"
-        ></a-cylinder>
-        <a-plane
-          position="0 0 -4"
-          rotation="-90 0 0"
-          width="4"
-          height="4"
-          color="#7BC8A4"
-        ></a-plane>
-        <a-sky color="#ECECEC"></a-sky>
-      </a-scene>
+    <div>
+      <h1>Hello A-Frame VR World</h1>
+      <div class="container">
+        <nav class="nav">
+          <ul class="cards">
+            <li>
+              <a class="card" href="">CAZENEUVE Kélian</a>
+            </li>
+            <li>
+              <a class="card" href="">DEJEAN Nathan</a>
+            </li>
+            <li>
+              <a class="card" href="">GUNDUZ Arda</a>
+            </li>
+            <li>
+              <a class="card" href="">LOPEZ BAILE-ASSIRIFIX Mel</a>
+            </li>
+            <li>
+              <a class="card" href="">MARIEN Eloïse</a>
+            </li>
+            <li>
+              <a class="card" href="">MAUGAIN Alexis</a>
+            </li>
+            <li>
+              <a class="card" href="">MOISSINAC-BONIN Matthéo</a>
+            </li>
+            <li>
+              <a class="card" href="">MOUGENOT Matéo</a>
+            </li>
+            <li>
+              <a class="card" href="">MULLER Jean-José</a>
+            </li>
+            <li>
+              <a class="card" href="">POULBRIERE Louka</a>
+            </li>
+            <li>
+              <a class="card" href="">SATI Melih</a>
+            </li>
+            <li>
+              <a class="card" href="">VINCENT Armand</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -21,6 +21,7 @@ npm install aframe
 ### Première page
 
 ```html
+<!-- index.html -->
 <a-scene>
   <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
   <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
@@ -42,6 +43,7 @@ npm install aframe
 ```
 
 ```js
+// File main.js
 import AFRAME from "aframe";
 ```
 
