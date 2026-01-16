@@ -60,6 +60,8 @@ git push -u origin main
 
 #### Update Vite Config
 
+Créer un fichier `vite.config.js` à la racine du projet.
+
 ```js
 import { defineConfig } from "vite";
 
@@ -132,6 +134,6 @@ jobs:
 
 #### Enable GitHub Pages
 
-Dans `settings → pages → source`, sélectionnez **github actions**.
+Dans `settings → pages → source (Build and deployment)`, sélectionnez **github actions**.
 
-Push votre projet sur github.
+`Push` votre projet sur github.
