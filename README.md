@@ -49,7 +49,7 @@ import AFRAME from "aframe";
 
 ```bash
 git init
-git remote add origin https://github.com/denis-springinsfeld/S6_25.git
+git remote add origin https://github.com/<nom-repo>.git
 git branch -M main
 git push -u origin main
 ```
