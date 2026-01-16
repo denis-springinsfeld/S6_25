@@ -47,6 +47,8 @@ import AFRAME from "aframe";
 
 ### GitHub Pages
 
+#### Initialisation git
+
 ```bash
 git init
 git remote add origin https://github.com/<nom-repo>.git
@@ -54,27 +56,28 @@ git branch -M main
 git push -u origin main
 ```
 
-Update Vite Config
+#### Update Vite Config
 
-Set the correct base in vite.config.js.
+```js
+import { defineConfig } from "vite";
 
-If you are deploying to https://<USERNAME>.github.io/, or to a custom domain through GitHub Pages (eg. www.example.com), set base to '/'. Alternatively, you can remove base from the configuration, as it defaults to '/'.
+export default defineConfig({
+  base: "/<nom-repo>/",
+});
+```
 
-If you are deploying to https://<USERNAME>.github.io/<REPO>/ (eg. your repository is at https://github.com/<USERNAME>/<REPO>), then set base to '/<REPO>/'.
-
-Enable GitHub Pages
+#### Enable GitHub Pages
 
 In your repository, go to Settings → Pages. Under Build and deployment, open the Source dropdown, and select GitHub Actions.
 
 GitHub will now deploy your site using a GitHub Actions workflow, which is necessary since Vite requires a build step for deployment.
 
-Create a Workflow
+#### Create a Workflow
 
-Create a new file in your repository at .github/workflows/deploy.yml. You can also click on “create your own” from the previous step, which will generate a starter workflow file for you.
+Créer un nouveau fichier dans votre repository à
+`.github/workflows/deploy.yml`.
 
-Here’s a sample workflow that installs dependencies with npm, builds the site, and deploys it whenever you push changes to the main branch:
-
-`.github/workflows/deploy.yml`
+Copie le code suivant :
 
 ```bash
 
@@ -130,3 +133,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
+
+Dans `settings → pages → source`, sélectionnez **github actions**.
+
+Push votre projet sur github.
