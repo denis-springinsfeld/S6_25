@@ -137,3 +137,7 @@ jobs:
 Dans `settings → pages → source (Build and deployment)`, sélectionnez **github actions**.
 
 `Push` votre projet sur github.
+
+## Links des projets
+
+https://denis-springinsfeld.github.io/S6_25/
